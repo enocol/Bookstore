@@ -5,7 +5,8 @@ const Catergories = () => {
 
   return (
     <div>
-      <h1>{status}</h1>;
+      <h1>{status}</h1>
+      ;
     </div>
   );
 };
