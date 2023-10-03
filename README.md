@@ -1,4 +1,3 @@
-
 <a name="readme-top"></a>
 
   <h3><b>Book Store</b></h3>
@@ -52,6 +51,7 @@ Read a random math-related quote.
 
 - **[Book Store component]**
 - **[Navigation with React-router v6]**
+- **[Redux store, action and reducers with redux toolkit]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,6 +162,4 @@ Above all, to Almighty Allah be the Glory.
 
 This project is [MIT](./LICENSE) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-=======
-
+# <p align="right">(<a href="#readme-top">back to top</a>)</p>
