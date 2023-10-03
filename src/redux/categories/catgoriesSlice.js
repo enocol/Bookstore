@@ -3,7 +3,15 @@ import { createSlice } from '@reduxjs/toolkit';
 const categoriesSlice = createSlice({
   name: 'categories',
   initialState: {
-    status: 'Under Contructions',
+    status: 'Under Constructions',
+    reducers: {
+      category: (state) => {
+        if (state.categories.status === 'Under Contructions') {
+          return state.categories.status;
+        }
+        return 'Thanks for visiting';
+      },
+    },
   },
 });
 
