@@ -27,10 +27,11 @@
 
 # 📖 [Book Store] <a name="about-project"></a>
 
-**[Book Store]** "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+**[Book Store]** "Books store" is a webapp keeping tract of books and thier Authors. It is a Single Page App (SPA) that allows users to:
 
-Make simple calculations.
-Read a random math-related quote.
+Add books.
+Remove Books.
+Filter books according to their categories.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -52,6 +53,7 @@ Read a random math-related quote.
 - **[Book Store component]**
 - **[Navigation with React-router v6]**
 - **[Redux store, action and reducers with redux toolkit]**
+- **[Adding and removing books displayed on the UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +120,7 @@ You can deploy this project using:
 👤 **Enoh Collins**
 
 - GitHub: [@githubhandle](https://github.com/enocol)
-- Twitter: [@twitterhandle](https://mobile.twitter.com/enocol)
+- Twitter: [@twitterhandle](https://mobile.twitter.com/collins_en25288)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/mwlite/in/enocol)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

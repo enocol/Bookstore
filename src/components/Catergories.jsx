@@ -4,9 +4,8 @@ const Catergories = () => {
   const { status } = useSelector((store) => store.categories);
 
   return (
-    <div>
+    <div className="category">
       <h1>{status}</h1>
-      ;
     </div>
   );
 };
