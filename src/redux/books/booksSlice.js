@@ -24,13 +24,21 @@ const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    bookAdded: (state, action) => state.books.push(action.payload),
+    bookAdded: (books, action) => {
+      books.push(action.payload);
+    },
 
-    bookRemoved: (state, action) => {
-      const itemId = action.payload.id;
-      return state.books.filter((book) => book.id !== itemId);
+    bookRemoved: (books, action) => {
+      const bookIndex = books.findIndex(
+        (book) => book.item_id === action.payload,
+      );
+      if (bookIndex !== -1) {
+        books.splice(bookIndex, 1);
+      }
     },
   },
 });
+
+export const { bookAdded, bookRemoved } = booksSlice.actions;
 
 export default booksSlice.reducer;
