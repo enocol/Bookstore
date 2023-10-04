@@ -1,11 +1,9 @@
+import { useSelector } from 'react-redux';
 import AddNewBook from './AddNewBook';
 
 const Books = () => {
-  const books = [
-    { title: 'book1', author: 'author1', id: 1 },
-    { title: 'book2', author: 'author2', id: 2 },
-    { title: 'book3', author: 'author3', id: 3 },
-  ];
+  const books = useSelector((store) => store.books);
+
   return (
     <div className="book-container">
       <h1 className="title">Books</h1>
