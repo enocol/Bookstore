@@ -118,7 +118,7 @@ You can deploy this project using:
 👤 **Enoh Collins**
 
 - GitHub: [@githubhandle](https://github.com/enocol)
-- Twitter: [@twitterhandle](https://mobile.twitter.com/enocol)
+- Twitter: [@twitterhandle](https://mobile.twitter.com/collins_en25288)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/mwlite/in/enocol)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
