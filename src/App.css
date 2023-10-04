@@ -33,6 +33,7 @@
 .booklist {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
   height: 50px;
   width: 50%;
@@ -70,4 +71,11 @@
 
 .author-input {
   margin-right: 10px;
+}
+
+.category {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
