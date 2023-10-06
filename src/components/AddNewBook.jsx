@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { bookAdded } from '../redux/books/booksSlice';
+import { postData, bookAdded } from '../redux/books/booksSlice';
 
 const AddNewBook = () => {
   const dispatch = useDispatch();
@@ -25,8 +25,11 @@ const AddNewBook = () => {
       title: formValues.title,
       author: formValues.author,
       item_id: uuidv4(),
+      category: 'Action',
     };
+    dispatch(postData(newBook));
     dispatch(bookAdded(newBook));
+
     setFormValues({
       title: '',
       author: '',
