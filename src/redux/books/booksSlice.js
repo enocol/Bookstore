@@ -48,7 +48,6 @@ const booksSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(fetchBooks.fulfilled, (state, action) => {
-        // Transform the data
         state.books = Object.entries(action.payload).map(
           ([bookId, bookArray]) => ({
             item_id: bookId,
@@ -82,4 +81,3 @@ const booksSlice = createSlice({
 export const { bookAdded, bookRemoved } = booksSlice.actions;
 
 export default booksSlice.reducer;
-
