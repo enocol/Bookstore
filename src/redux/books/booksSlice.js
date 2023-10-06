@@ -1,8 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiEndPoint =
-  'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/9g8gWcp1UOlVIcNnZwEx/books';
+const apiEndPoint = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/9g8gWcp1UOlVIcNnZwEx/books';
 
 export const postData = createAsyncThunk('books/postBooks', async (newData) => {
   const response = await axios.post(apiEndPoint, newData);
