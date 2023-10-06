@@ -15,7 +15,7 @@ const Books = () => {
 
   useEffect(() => {
     dispatch(fetchBooks());
-  }, []);
+  }, [dispatch]);
 
   const handledelete = (id) => {
     dispatch(bookRemoved(id));
@@ -27,7 +27,12 @@ const Books = () => {
   }
 
   if (status === 'failed') {
-    return <div>Error: {error}</div>;
+    return (
+      <div>
+        Error:
+        {error}
+      </div>
+    );
   }
 
   return (
