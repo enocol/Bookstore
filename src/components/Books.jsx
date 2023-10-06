@@ -1,15 +1,39 @@
 import { useSelector, useDispatch } from 'react-redux';
-
+import React, { useEffect } from 'react';
 import AddNewBook from './AddNewBook';
-import { bookRemoved } from '../redux/books/booksSlice';
+import {
+  bookRemoved,
+  fetchBooks,
+  deleteBooks,
+} from '../redux/books/booksSlice';
 
 const Books = () => {
-  const books = useSelector((store) => store.books);
+  const books = useSelector((state) => state.books.books);
+  const status = useSelector((state) => state.status);
+  const error = useSelector((state) => state.error);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
 
   const handledelete = (id) => {
     dispatch(bookRemoved(id));
+    dispatch(deleteBooks(id));
   };
+
+  if (status === 'loading') {
+    return <div>Loading...</div>;
+  }
+
+  if (status === 'failed') {
+    return (
+      <div>
+        Error:
+        {error}
+      </div>
+    );
+  }
 
   return (
     <div className="book-container">
