@@ -1,34 +1,21 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiEndPoint =
-  'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/9g8gWcp1UOlVIcNnZwEx/books';
+const apiEndPoint = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/9g8gWcp1UOlVIcNnZwEx/books';
 
 export const postData = createAsyncThunk('books/postBooks', async (newData) => {
-  try {
-    const response = await axios.post(apiEndPoint, newData);
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
+  const response = await axios.post(apiEndPoint, newData);
+  return response.data;
 });
 
 export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
-  try {
-    const response = await axios.get(apiEndPoint);
+  const response = await axios.get(apiEndPoint);
 
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
+  return response.data;
 });
 export const deleteBooks = createAsyncThunk('books/deleteBooks', async (id) => {
-  try {
-    await axios.delete(`${apiEndPoint}/${id}`);
-    return id;
-  } catch (error) {
-    throw error;
-  }
+  await axios.delete(`${apiEndPoint}/${id}`);
+  return id;
 });
 
 const initialState = {
