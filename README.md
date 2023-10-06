@@ -54,6 +54,7 @@ Filter books according to their categories.
 - **[Navigation with React-router v6]**
 - **[Redux store, action and reducers with redux toolkit]**
 - **[Adding and removing books displayed on the UI]**
+- **[Persistence of books in the Bookstore API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
