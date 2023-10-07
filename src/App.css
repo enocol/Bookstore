@@ -10,7 +10,7 @@
   padding-top: 10px;
   background: #fff;
   margin: 10px auto;
-  width: 90%;
+  width: 85%;
   height: 150px;
   display: flex;
   justify-content: space-between;
@@ -26,10 +26,10 @@
 .right {
   display: flex;
   flex-direction: column;
-  padding: 5px 0 0 100px;
+  padding: 5px 0 0 40px;
   justify-content: center;
   align-items: flex-start;
-  flex-basis: 35%;
+  flex-basis: 25%;
 }
 
 .category {
@@ -68,7 +68,6 @@
 .title {
   width: auto;
   height: 1.813rem;
-  margin: 0.188rem 2.125rem 0 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
@@ -76,7 +75,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.18px;
-  color: #888;
+  color: #000;
 }
 
 .m-1 {
@@ -171,9 +170,9 @@
 
 .book-form {
   margin: 40px auto;
-  width: 90%;
+  width: 85%;
   background: none;
-  padding: 30px 0 400px 0;
+  padding: 0 0 400px 0;
   border-top: 1px solid #e8e8e8;
 }
 
@@ -200,7 +199,6 @@
   height: 1.813rem;
   padding: 10px;
   outline: darkgrey;
-  margin: 1.188rem 2.125rem 0 0;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -209,7 +207,6 @@
 .author-input {
   width: 17.813rem;
   height: 1.813rem;
-  margin: 1.188rem 2.125rem 0;
   padding: 0.375rem 0.938rem 0.563rem 1rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -225,7 +222,6 @@
 .add-book {
   width: 11.5rem;
   height: 2.813rem;
-  margin: 1.188rem 0 0 2.125rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: #0290ff;
@@ -295,13 +291,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 75px;
+  padding: 5px 95px;
   height: 70px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
+  width: 95%;
 }
 
 .navbar h1 {
@@ -321,14 +318,26 @@
 .navlinks {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .link-c {
   width: 6.563rem;
   height: 1rem;
-  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
   opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.713rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.link-b {
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
