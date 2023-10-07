@@ -7,11 +7,11 @@ const NavBar = () => (
         <h1>Bookstore CMS</h1>
         <ul className="navlinks">
           <li className="link-b">
-            <Link to="/">Books</Link>
+            <Link to="/">BOOKS</Link>
           </li>
           <li>
             <Link to="/catergories" className="link-c">
-              Catergories
+              CATEGORIES
             </Link>
           </li>
         </ul>
@@ -24,3 +24,4 @@ const NavBar = () => (
 );
 
 export default NavBar;
+
