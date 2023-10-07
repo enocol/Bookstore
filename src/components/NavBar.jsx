@@ -17,11 +17,10 @@ const NavBar = () => (
         </ul>
       </nav>
       <div className="profile">
-        <i class="fa-sharp fa-solid fa-user fa-sm"></i>
+        <i className="fa-sharp fa-solid fa-user fa-sm" />
       </div>
     </header>
   </>
 );
 
 export default NavBar;
-

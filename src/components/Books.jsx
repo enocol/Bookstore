@@ -1,12 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import AddNewBook from './AddNewBook';
 import {
   bookRemoved,
   fetchBooks,
   deleteBooks,
 } from '../redux/books/booksSlice';
-import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Books = () => {
