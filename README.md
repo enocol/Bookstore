@@ -155,7 +155,7 @@ If you like this project follow Me on my social media
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Above all, to Almighty Allah be the Glory.
+Above all, and especially to Zeplin's for the bookstore design provided.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
